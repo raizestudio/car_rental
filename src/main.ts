@@ -12,7 +12,9 @@ import router from './router'
 const app = createApp(App)
 
 app.config.globalProperties.$capitalize = capitalize
-app.config.globalProperties.$capitalizeWords = capitalizeWords
+app.config.globalProperties.$capitalizeWords = (text: string): string => {
+  return text.replace(/\b\w/g, (char) => char.toUpperCase())
+}
 
 app.use(createPinia())
 app.use(router)
