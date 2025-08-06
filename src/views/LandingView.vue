@@ -12,7 +12,7 @@ import ExtraSloganComponent from '@/components/landing/ExtraSloganComponent.vue'
   <HeroComponent />
   <HighInfoComponent />
   <OnBoardingInfoComponent />
-  <CarGridComponent />
+  <CarGridComponent :show-head="true" :is-limited="true" />
   <FactsComponent />
   <MobileAppComponent />
   <ExtraSloganComponent />

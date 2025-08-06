@@ -24,7 +24,7 @@ const selectCity = (cityName: string) => {
     <input
       v-model="location"
       type="text"
-      class="p-2 rounded bg-white w-full border border-gray-200 outline-0"
+      class="p-4 rounded-lg bg-white w-full border border-gray-200 outline-0"
       placeholder="Lieu de prise en charge"
     />
     <ul

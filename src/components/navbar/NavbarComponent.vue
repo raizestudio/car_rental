@@ -25,10 +25,6 @@ const route = useRoute()
         :class="{ 'text-gray-800': route.path === page.path }"
         >{{ page.label }}</router-link
       >
-
-      <span class="font-semibold text-gray-600 text-lg hover:text-violet-800 cursor-pointer"
-        >Contact</span
-      >
     </div>
     <div>
       <a href="tel:+332345678" class="flex items-center gap-2">

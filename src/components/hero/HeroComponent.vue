@@ -1,11 +1,7 @@
 <script setup lang="ts">
 // Components
 import LocationAutoComplete from '@/components/input/LocationAutoComplete.vue'
-
-// Stores
-import { useCarStore } from '@/stores/car'
-
-const carStore = useCarStore()
+import DropdownComponent from '@/components/input/DropdownComponent.vue'
 </script>
 <template>
   <div class="relative flex justify-between gap-8 m-16 p-18 bg-violet-900 rounded-2xl">
@@ -28,25 +24,26 @@ const carStore = useCarStore()
     <div class="flex flex-col justify-center gap-10 p-8 bg-white rounded-2xl z-10">
       <span class="font-semibold text-center text-3xl">Réservez dès maintenant</span>
       <div class="flex flex-col justify-center gap-6">
-        <select class="p-3 rounded bg-white border border-gray-200" placeholder="Type de véhicule">
+        <DropdownComponent />
+        <!-- <select class="p-4 rounded bg-white border border-gray-200" placeholder="Type de véhicule">
           <option v-for="carType in carStore.carClasses" :key="carType.id" :value="carType.name">
             {{ carType.name }}
           </option>
-        </select>
+        </select> -->
         <LocationAutoComplete />
         <input
           type="date"
-          class="p-2 rounded bg-white border border-gray-200"
+          class="p-4 rounded-lg bg-white border border-gray-200"
           placeholder="Date de prise en charge"
         />
         <LocationAutoComplete />
         <input
           type="date"
-          class="p-2 rounded bg-white border border-gray-200"
+          class="p-4 rounded-lg bg-white border border-gray-200"
           placeholder="Date de retour"
         />
         <button
-          class="p-2 bg-orange-400 text-white text-lg font-semibold rounded-lg hover:bg-orange-500 transition-colors cursor-pointer"
+          class="p-4 bg-orange-400 text-white text-lg font-semibold rounded-lg hover:bg-orange-500 transition-colors cursor-pointer"
         >
           Réserver maintenant
         </button>

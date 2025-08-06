@@ -10,14 +10,17 @@ export const useCarStore = defineStore('car', () => {
   ])
 
   const carTypes = ref([
-    { id: 1, name: 'Citadine' },
-    { id: 2, name: 'Berline' },
-    { id: 3, name: 'Coupé' },
-    { id: 4, name: 'Cabriolet' },
-    { id: 5, name: 'Break' },
-    { id: 6, name: 'Monospace' },
-    { id: 7, name: 'Pick-up' },
-    { id: 8, name: '4x4' },
+    { id: 1, name: 'Citadine', icon: 'SedanIcon' },
+    { id: 2, name: 'Berline', icon: 'SedanIcon' },
+    { id: 3, name: 'Coupé', icon: 'SedanIcon' },
+    { id: 4, name: 'Cabriolet', icon: 'ConvertibleIcon' },
+    { id: 5, name: 'Break', icon: 'SedanIcon' },
+    { id: 6, name: 'Monospace', icon: 'SedanIcon' },
+    { id: 7, name: 'Pick-up', icon: 'PickupIcon' },
+    { id: 8, name: '4x4', icon: 'SedanIcon' },
+    { id: 9, name: 'Suv', icon: 'SuvIcon' },
+    { id: 10, name: 'Minivan', icon: 'MinivanIcon' },
+    { id: 11, name: 'Camion', icon: 'SedanIcon' },
   ])
 
   const carTransmission = ref([

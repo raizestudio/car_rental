@@ -18,6 +18,16 @@ export const useCoreStore = defineStore('core', () => {
       label: 'Agences',
       path: '/agencies',
     },
+    {
+      name: 'about',
+      label: 'À propos',
+      path: '/about',
+    },
+    {
+      name: 'contact',
+      label: 'Contact',
+      path: '/contact',
+    },
   ])
   // const activePage = ref('home')
 
