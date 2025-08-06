@@ -209,6 +209,7 @@ export const useCarStore = defineStore('car', () => {
       carExtras: [1, 2, 3],
       carExtra: 1,
       priceDaily: 49,
+      distance: 100,
     },
     {
       id: 2,
@@ -224,6 +225,7 @@ export const useCarStore = defineStore('car', () => {
       carExtras: [4, 5],
       carExtra: 2,
       priceDaily: 69,
+      distance: 200,
     },
     {
       id: 3,
@@ -239,6 +241,7 @@ export const useCarStore = defineStore('car', () => {
       carExtras: [6, 7, 8],
       carExtra: 3,
       priceDaily: 89,
+      distance: 300,
     },
     {
       id: 4,
@@ -254,6 +257,7 @@ export const useCarStore = defineStore('car', () => {
       carExtras: [9, 10],
       carExtra: 4,
       priceDaily: 109,
+      distance: 100,
     },
     {
       id: 5,
@@ -269,6 +273,7 @@ export const useCarStore = defineStore('car', () => {
       carExtras: [11, 12],
       carExtra: 5,
       priceDaily: 39,
+      distance: 150,
     },
     {
       id: 6,
@@ -284,6 +289,7 @@ export const useCarStore = defineStore('car', () => {
       carExtras: [13, 14],
       carExtra: 6,
       priceDaily: 59,
+      distance: 5000,
     },
     {
       id: 7,
@@ -299,6 +305,7 @@ export const useCarStore = defineStore('car', () => {
       carExtras: [15, 16],
       carExtra: 7,
       priceDaily: 79,
+      distance: 1000,
     },
     {
       id: 8,
@@ -314,6 +321,7 @@ export const useCarStore = defineStore('car', () => {
       carExtras: [17, 18],
       carExtra: 8,
       priceDaily: 99,
+      distance: 2000,
     },
     {
       id: 9,
@@ -329,6 +337,7 @@ export const useCarStore = defineStore('car', () => {
       carExtras: [19, 20],
       carExtra: 9,
       priceDaily: 29,
+      distance: 100,
     },
     {
       id: 10,
@@ -344,6 +353,7 @@ export const useCarStore = defineStore('car', () => {
       carExtras: [1, 2, 3],
       carExtra: 10,
       priceDaily: 69,
+      distance: 200,
     },
     {
       id: 11,
@@ -359,6 +369,7 @@ export const useCarStore = defineStore('car', () => {
       carExtras: [4, 5, 6],
       carExtra: 11,
       priceDaily: 89,
+      distance: 100,
     },
     {
       id: 12,
@@ -374,6 +385,7 @@ export const useCarStore = defineStore('car', () => {
       carExtras: [7, 8, 9],
       carExtra: 12,
       priceDaily: 109,
+      distance: 300,
     },
     {
       id: 13,
@@ -389,6 +401,7 @@ export const useCarStore = defineStore('car', () => {
       carExtras: [10, 11, 12],
       carExtra: 13,
       priceDaily: 39,
+      distance: 150,
     },
     {
       id: 14,
@@ -404,6 +417,7 @@ export const useCarStore = defineStore('car', () => {
       carExtras: [13, 14, 15],
       carExtra: 14,
       priceDaily: 59,
+      distance: 5000,
     },
     {
       id: 15,
@@ -419,6 +433,7 @@ export const useCarStore = defineStore('car', () => {
       carExtras: [16, 17, 18],
       carExtra: 15,
       priceDaily: 79,
+      distance: 1000,
     },
     {
       id: 16,
@@ -434,6 +449,7 @@ export const useCarStore = defineStore('car', () => {
       carExtras: [19, 20, 1],
       carExtra: 16,
       priceDaily: 99,
+      distance: 2000,
     },
     {
       id: 17,
@@ -449,6 +465,7 @@ export const useCarStore = defineStore('car', () => {
       carExtras: [2, 3, 4],
       carExtra: 17,
       priceDaily: 29,
+      distance: 100,
     },
     {
       id: 18,
@@ -464,6 +481,7 @@ export const useCarStore = defineStore('car', () => {
       carExtras: [5, 6, 7],
       carExtra: 18,
       priceDaily: 69,
+      distance: 200,
     },
   ])
 

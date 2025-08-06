@@ -31,7 +31,7 @@ const mockData = ref([
 ])
 </script>
 <template>
-  <div class="flex justify-around px-16 py-12">
+  <div class="flex flex-col gap-20 xl:gap-0 xl:flex-row justify-around px-16 py-12">
     <InfoComponent v-for="data in mockData" :key="data.title" :data="data" />
   </div>
 </template>

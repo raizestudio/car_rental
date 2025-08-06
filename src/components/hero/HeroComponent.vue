@@ -4,7 +4,9 @@ import LocationAutoComplete from '@/components/input/LocationAutoComplete.vue'
 import DropdownComponent from '@/components/input/DropdownComponent.vue'
 </script>
 <template>
-  <div class="relative flex justify-between gap-8 m-16 p-18 bg-violet-900 rounded-2xl">
+  <div
+    class="relative flex flex-col xl:flex-row justify-between gap-8 m-16 p-18 bg-violet-900 rounded-2xl"
+  >
     <div class="flex flex-col justify-center gap-8 max-w-xl z-10">
       <span class="text-white text-6xl font-bold"
         >Trouvez une voiture et réservez-la en quelques clics</span
@@ -25,11 +27,6 @@ import DropdownComponent from '@/components/input/DropdownComponent.vue'
       <span class="font-semibold text-center text-3xl">Réservez dès maintenant</span>
       <div class="flex flex-col justify-center gap-6">
         <DropdownComponent />
-        <!-- <select class="p-4 rounded bg-white border border-gray-200" placeholder="Type de véhicule">
-          <option v-for="carType in carStore.carClasses" :key="carType.id" :value="carType.name">
-            {{ carType.name }}
-          </option>
-        </select> -->
         <LocationAutoComplete />
         <input
           type="date"
@@ -57,7 +54,7 @@ import DropdownComponent from '@/components/input/DropdownComponent.vue'
     <img
       src="@/assets/images/hero_bg.png"
       alt="Hero Image"
-      class="absolute -bottom-16 left-[calc(50%-300px)] h-full"
+      class="absolute bottom-0 left-1/2 transform -translate-x-1/2 max-w-full max-h-full h-auto"
     />
   </div>
 </template>

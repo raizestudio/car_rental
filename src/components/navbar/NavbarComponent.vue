@@ -14,15 +14,15 @@ const coreStore = useCoreStore()
 const route = useRoute()
 </script>
 <template>
-  <div class="flex items-center h-16 px-8">
+  <div class="flex items-center h-20 px-8">
     <NavbarTitleComponent />
     <div class="grow flex justify-center gap-8">
       <router-link
         v-for="page in coreStore.availablePages"
         :key="page.name"
         :to="page.path"
-        class="font-semibold text-lg text-gray-600 hover:text-violet-800 cursor-pointer"
-        :class="{ 'text-gray-800': route.path === page.path }"
+        class="font-semibold text-lg text-gray-600 hover:text-violet-800 cursor-pointer select-none"
+        :class="{ 'text-gray-800 text-xl': route.path === page.path }"
         >{{ page.label }}</router-link
       >
     </div>

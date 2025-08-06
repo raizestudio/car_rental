@@ -93,12 +93,13 @@ const currentCarExtraIcon = computed(() => {
         <span>{{ carStore.carExtras.find((extra) => extra.id === props.car.carExtra)?.name }}</span>
       </div>
     </div>
-    <div class="">
-      <button
+    <div class="flex grow">
+      <router-link
+        :to="`/car/${props.car.id}`"
         class="w-full px-6 py-3 font-semibold text-white bg-violet-800 rounded-xl transition-colors duration-300 cursor-pointer hover:bg-violet-900"
       >
         Détails
-      </button>
+      </router-link>
     </div>
   </div>
 </template>
