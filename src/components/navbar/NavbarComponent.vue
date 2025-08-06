@@ -31,7 +31,7 @@ const route = useRoute()
       >
     </div>
     <div>
-      <div class="flex items-center gap-2">
+      <a href="tel:+332345678" class="flex items-center gap-2">
         <div class="w-10 h-10 bg-violet-900 rounded-full flex items-center justify-center">
           <PhoneIcon class="w-6 h-6 text-white" />
         </div>
@@ -39,7 +39,7 @@ const route = useRoute()
           <span>Besoin d'aide?</span>
           <span class="font-semibold">+33 2 34 56 78</span>
         </div>
-      </div>
+      </a>
     </div>
   </div>
 </template>
