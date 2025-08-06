@@ -1,6 +1,6 @@
-/// <reference types="vite/client" />
+export {}
 
-declare module '@vue/runtime-core' {
+declare module 'vue' {
   interface ComponentCustomProperties {
     $capitalize: (word: string) => string
     $capitalizeWords: (str: string) => string

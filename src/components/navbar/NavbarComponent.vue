@@ -1,27 +1,43 @@
 <script setup lang="ts">
+import { useRoute } from 'vue-router'
+
+// Components
+import NavbarTitleComponent from '@/components/navbar/NavbarTitleComponent.vue'
 // Icons
-// import UserIcon from '@/components/icons/UserIcon.vue'
-import CarSimpleIcon from '@/components/icons/CarSimpleIcon.vue'
 import PhoneIcon from '@/components/icons/PhoneIcon.vue'
+
+// Stores
+import { useCoreStore } from '@/stores/core'
+
+const coreStore = useCoreStore()
+
+const route = useRoute()
 </script>
 <template>
   <div class="flex items-center h-16 px-8">
-    <div class="flex items-center gap-3">
-      <CarSimpleIcon class="inline-block w-8 h-8 text-gray-800" />
-      <span class="font-black text-3xl text-gray-800">Car Rental</span>
-    </div>
-    <div class="grow flex justify-center">
-      <span class="text-gray-600 text-lg ml-4">Accueil</span>
-      <span class="text-gray-600 text-lg ml-4">Véhicules</span>
-      <span class="text-gray-600 text-lg ml-4">Agences</span>
-      <span class="text-gray-600 text-lg ml-4">Contact</span>
+    <NavbarTitleComponent />
+    <div class="grow flex justify-center gap-8">
+      <router-link
+        v-for="page in coreStore.availablePages"
+        :key="page.name"
+        :to="page.path"
+        class="font-semibold text-lg text-gray-600 hover:text-violet-800 cursor-pointer"
+        :class="{ 'text-gray-800': route.path === page.path }"
+        >{{ page.label }}</router-link
+      >
+
+      <span class="font-semibold text-gray-600 text-lg hover:text-violet-800 cursor-pointer"
+        >Contact</span
+      >
     </div>
     <div>
       <div class="flex items-center gap-2">
-        <PhoneIcon class="w-8 h-8 text-gray-800" />
+        <div class="w-10 h-10 bg-violet-900 rounded-full flex items-center justify-center">
+          <PhoneIcon class="w-6 h-6 text-white" />
+        </div>
         <div class="flex flex-col">
-          <span>Besoin d'aide</span>
-          <span>+33 02 34 56 78</span>
+          <span>Besoin d'aide?</span>
+          <span class="font-semibold">+33 2 34 56 78</span>
         </div>
       </div>
     </div>
